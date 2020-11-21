@@ -20,14 +20,14 @@ class User(AbstractUser):
         max_length=255,
     )
     first_name = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     last_name = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     age_range = models.DurationField(
         null=True,
@@ -41,6 +41,18 @@ class User(AbstractUser):
         null=True,
         blank=True,
     )
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
