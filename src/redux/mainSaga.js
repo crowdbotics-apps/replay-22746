@@ -18,7 +18,6 @@ export function* mainSaga() {
 
     //@BlueprintReduxSagaMainInsertion
 CopyOfCalendarView4177172Saga,
-CalendarView4176258Saga,
     
   ]);
 }
